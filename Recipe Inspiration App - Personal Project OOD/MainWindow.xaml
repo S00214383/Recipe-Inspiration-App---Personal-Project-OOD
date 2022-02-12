@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Recipe Inspiration App" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI Semibold"/>
-        <TextBlock x:Name="txtblk_Select_Country"  HorizontalAlignment="Left" Margin="48,72,0,0" TextWrapping="Wrap" Text="Select a Country:" VerticalAlignment="Top" Height="24" Width="99"/>
-        <ComboBox x:Name="cbboxCountries" HorizontalAlignment="Left" Margin="147,72,0,0" VerticalAlignment="Top" Width="120" Loaded="cbboxCountries_Loaded"/>
+        <TextBlock x:Name="txtblk_Select_Country"  HorizontalAlignment="Left" Margin="48,72,0,0" TextWrapping="Wrap" Text="Select by Continent:" VerticalAlignment="Top" Height="24" Width="112"/>
+
+        <ListBox x:Name="lbxCountries" HorizontalAlignment="Left" Height="239" Margin="63,130,0,0" VerticalAlignment="Top" Width="186" Loaded="lbxCountries_Loaded" SelectionChanged="lbxCountries_SelectionChanged"/>
+        <ComboBox x:Name="cbxContinent" HorizontalAlignment="Left" Margin="165,72,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbxContinent_SelectionChanged"/>
+        <ListBox x:Name="lbxDishInfo" HorizontalAlignment="Left" Height="100" Margin="327,139,0,0" VerticalAlignment="Top" Width="424"/>
         <!-- -->
     </Grid>
 </Window>

@@ -55,9 +55,22 @@ namespace Recipe_Inspiration_App___Personal_Project_OOD
             OceaniaCountry c9 = new OceaniaCountry() { CountryName = "Australia", TraditionalFood = "Lamb Leg Roast" };
             OceaniaCountry c10 = new OceaniaCountry() { CountryName = "Fiji", TraditionalFood = "Kokoda" };
 
+
+            //declaring dishes from each country
             Dishes d1 = new Dishes { DishName = "Chilaquiles", DishIngredients = "Pepper", DifficultyLevel = "hard", DishInstructions = "instruc" };
             Dishes d2 = new Dishes { DishName = "Feijoada", DishIngredients = "Beans", DifficultyLevel = "Medium", DishInstructions = "instruc" };
-            
+
+            Dishes d3 = new Dishes { DishName = "Ratatouille", DishIngredients = "Vegetables", DifficultyLevel = "Medium", DishInstructions = "instruc" };
+            Dishes d4 = new Dishes { DishName = "Spatzle", DishIngredients = "Beans", DifficultyLevel = "Medium", DishInstructions = "instruc" };
+
+            Dishes d5 = new Dishes { DishName = "Kung Pao Chicken", DishIngredients = "Beans", DifficultyLevel = "Medium", DishInstructions = "instruc" };
+            Dishes d6 = new Dishes { DishName = "Iasooni Tikka Chicken", DishIngredients = "Beans", DifficultyLevel = "Medium", DishInstructions = "instruc" };
+
+            Dishes d7 = new Dishes { DishName = "Bobotie", DishIngredients = "Beans", DifficultyLevel = "Medium", DishInstructions = "instruc" };
+            Dishes d8 = new Dishes { DishName = "Tagine", DishIngredients = "Beans", DifficultyLevel = "Medium", DishInstructions = "instruc" };
+
+            Dishes d9 = new Dishes { DishName = "Lamb Leg Roast", DishIngredients = "Beans", DifficultyLevel = "Medium", DishInstructions = "instruc" };
+            Dishes d10 = new Dishes { DishName = "Kokoda", DishIngredients = "Beans", DifficultyLevel = "Medium", DishInstructions = "instruc" };
 
             //adding them to th collection
             allCountries.Add(c1);
@@ -79,6 +92,15 @@ namespace Recipe_Inspiration_App___Personal_Project_OOD
             //add dishes to countries
             c1.DishesList.Add(d1);
             c2.DishesList.Add(d2);
+            c3.DishesList.Add(d3);
+            c4.DishesList.Add(d4);
+            c5.DishesList.Add(d5);
+            c6.DishesList.Add(d6);
+            c7.DishesList.Add(d7);
+            c8.DishesList.Add(d8);
+            c9.DishesList.Add(d9);
+            c10.DishesList.Add(d10);
+
 
             //displaying dishes
             //tbxRecipeInfo.Items
@@ -136,7 +158,7 @@ namespace Recipe_Inspiration_App___Personal_Project_OOD
                     lbxCountries.ItemsSource = filteredList;
                     break;
 
-                case "Africa":
+                case "African":
                     foreach (Country country in allCountries)
                     {
                         if (country is AfricaCountry)
@@ -177,5 +199,7 @@ namespace Recipe_Inspiration_App___Personal_Project_OOD
                 }
             
         }
+
+     
     }
 }

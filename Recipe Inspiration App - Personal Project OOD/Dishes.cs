@@ -8,7 +8,7 @@ namespace Recipe_Inspiration_App___Personal_Project_OOD
 {
 
 
-    public class Dishes : Country
+    public class Dishes 
     {
         //properties
         public string DishName { get; set; }
